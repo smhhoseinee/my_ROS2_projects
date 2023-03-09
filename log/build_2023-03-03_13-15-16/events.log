@@ -1,0 +1,31 @@
+[0.000000] (-) TimerEvent: {}
+[0.000268] (-) JobUnselected: {'identifier': 'alicesim'}
+[0.000329] (-) JobUnselected: {'identifier': 'bobsim'}
+[0.000352] (-) JobUnselected: {'identifier': 'bobsim'}
+[0.000365] (-) JobUnselected: {'identifier': 'cpp_pubsub'}
+[0.000376] (-) JobUnselected: {'identifier': 'examples_rclcpp_async_client'}
+[0.000386] (-) JobUnselected: {'identifier': 'examples_rclcpp_cbg_executor'}
+[0.000396] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_action_client'}
+[0.000405] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_action_server'}
+[0.000414] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_client'}
+[0.000423] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_composition'}
+[0.000433] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_publisher'}
+[0.000443] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_service'}
+[0.000452] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_subscriber'}
+[0.000460] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_timer'}
+[0.000470] (-) JobUnselected: {'identifier': 'examples_rclcpp_multithreaded_executor'}
+[0.000478] (-) JobUnselected: {'identifier': 'examples_rclcpp_wait_set'}
+[0.000487] (-) JobUnselected: {'identifier': 'examples_rclpy_executors'}
+[0.000496] (-) JobUnselected: {'identifier': 'examples_rclpy_guard_conditions'}
+[0.000505] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_action_client'}
+[0.000514] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_action_server'}
+[0.000524] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_client'}
+[0.000533] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_publisher'}
+[0.000541] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_service'}
+[0.000550] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_subscriber'}
+[0.000559] (-) JobUnselected: {'identifier': 'examples_rclpy_pointcloud_publisher'}
+[0.000568] (-) JobUnselected: {'identifier': 'launch_testing_examples'}
+[0.000577] (-) JobUnselected: {'identifier': 'my_package'}
+[0.000586] (-) JobUnselected: {'identifier': 'my_py_package'}
+[0.000595] (-) JobUnselected: {'identifier': 'turtlesim'}
+[0.000604] (-) EventReactorShutdown: {}

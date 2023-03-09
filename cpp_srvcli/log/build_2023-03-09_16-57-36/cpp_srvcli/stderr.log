@@ -1,0 +1,35 @@
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/root/ros2_ws/src/cpp_srvcli/src/st_len_server.cpp:1[m[K:
+[01m[K/root/ros2_ws/src/cpp_srvcli/src/st_len_server.cpp:[m[K In function ‘[01m[Kvoid add(std::shared_ptr<tutorial_interfaces::srv::StLen_Request_<std::allocator<void> > >, std::shared_ptr<tutorial_interfaces::srv::StLen_Response_<std::allocator<void> > >)[m[K’:
+[01m[K/root/ros2_ws/src/cpp_srvcli/src/st_len_server.cpp:11:45:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%ld[m[K’ expects argument of type ‘[01m[Klong int[m[K’, but argument 5 has type ‘[01m[Ktutorial_interfaces::srv::StLen_Request_<std::allocator<void> >::_a_type[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} [[01;35m[K-Wformat=[m[K]
+   11 |   RCLCPP_INFO(rclcpp::get_logger("rclcpp"), [01;35m[K"Incoming request\na: %ld" " b: %ld"[m[K,  // CHANGE
+      |                                             [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/root/ros2_ws/src/cpp_srvcli/src/st_len_server.cpp:11:69:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   11 |   RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Incoming request\na: [01;36m[K%ld[m[K" " b: %ld",  // CHANGE
+      |                                                                   [01;36m[K~~^[m[K
+      |                                                                     [01;36m[K|[m[K
+      |                                                                     [01;36m[Klong int[m[K
+[01m[K/root/ros2_ws/src/cpp_srvcli/src/st_len_server.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/root/ros2_ws/src/cpp_srvcli/src/st_len_server.cpp:22:45:[m[K [01;31m[Kerror: [m[K‘[01m[KAddThreeInts[m[K’ is not a member of ‘[01m[Ktutorial_interfaces::srv[m[K’
+   22 |   rclcpp::Service<tutorial_interfaces::srv::[01;31m[KAddThreeInts[m[K>::SharedPtr service =               // CHANGE
+      |                                             [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/root/ros2_ws/src/cpp_srvcli/src/st_len_server.cpp:22:57:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   22 |   rclcpp::Service<tutorial_interfaces::srv::AddThreeInts[01;31m[K>[m[K::SharedPtr service =               // CHANGE
+      |                                                         [01;31m[K^[m[K
+[01m[K/root/ros2_ws/src/cpp_srvcli/src/st_len_server.cpp:22:70:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kservice[m[K’
+   22 |   rclcpp::Service<tutorial_interfaces::srv::AddThreeInts>::SharedPtr [01;31m[Kservice[m[K =               // CHANGE
+      |                                                                      [01;31m[K^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/server.dir/build.make:76: CMakeFiles/server.dir/src/st_len_server.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/server.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2
