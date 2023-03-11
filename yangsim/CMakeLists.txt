@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(cpp_srvcli)
+project(yangsim)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
@@ -10,32 +10,21 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(tutorial_interfaces REQUIRED)         # CHANGE
 
-#add_executable(server src/add_three_ints_server.cpp)
-#ament_target_dependencies(server
-#  rclcpp tutorial_interfaces)                      # CHANGE
-
-add_executable(st_len_node src/st_len.cpp)
-ament_target_dependencies(st_len_node
+add_executable(yangnode src/yangnode.cpp)
+ament_target_dependencies(yangnode
   rclcpp tutorial_interfaces)                      # CHANGE
 
+# uncomment the following section in order to fill in
+# further dependencies manually.
+# find_package(<dependency> REQUIRED)
 
-add_executable(server src/st_len_server.cpp)
-ament_target_dependencies(server
-  rclcpp tutorial_interfaces)                      # CHANGE
+#target_include_directories(yangnode PUBLIC
+#  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+#  $<INSTALL_INTERFACE:include>)
+#target_compile_features(yangnode PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17
 
-
-add_executable(client src/st_len_client.cpp)
-ament_target_dependencies(client
-  rclcpp tutorial_interfaces)                      # CHANGE
-
-# Install executable
-install(TARGETS
-  server
-  client
-  st_len_node
-  DESTINATION lib/${PROJECT_NAME}
-)
-
+install(TARGETS yangnode
+  DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -49,13 +38,4 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
-#add_executable(server src/add_two_ints_server.cpp)
-#ament_target_dependencies(server
-#  rclcpp example_interfaces)
-#
-#add_executable(client src/add_two_ints_client.cpp)
-#ament_target_dependencies(client
-#  rclcpp example_interfaces)
-
 ament_package()
-

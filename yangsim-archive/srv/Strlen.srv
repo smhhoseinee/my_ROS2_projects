@@ -1,6 +1,0 @@
-# request
-string str
-int64 length
----
-# response
-int64 sum
