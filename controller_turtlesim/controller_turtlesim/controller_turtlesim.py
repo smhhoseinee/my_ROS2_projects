@@ -18,7 +18,6 @@ class MinimalSubscriber(Node):
         super().__init__('minimal_subscriber')
         self.declare_parameter('stop', False)
 
-        self.goalSend = False
         self.publisher_ = self.create_publisher(Twist, '/turtle1/cmd_vel', 10)
         self.subscription = self.create_subscription(
             Pose,
@@ -28,42 +27,32 @@ class MinimalSubscriber(Node):
         self.timer = self.create_timer(0.5, self.timer_callback)
         # self.action_client = self.create_client(RotateAbsolute, '/turtle1/rotate_absolute')
         self._action_client = ActionClient(self, RotateAbsolute, 'turtle1/rotate_absolute')
-
+        self.delay_while_goal_not_done = False
         self.state = 1
     
     def listener_callback(self, msg):
         # Change state based on current x and y
-        
         if (self.state == 1) and (msg.x > 11.0 or msg.y > 11.0 or msg.x <= 0.0 or msg.y <= 0.0):
             self.get_logger().info('hit state now is 2')
             self.state = 2
-        # elif self.state == 3:
-        #     self.get_logger().info('return from 1 to 3 ')
-        #     self.state = 1
 
     def goal_response_callback(self, future):
         goal_handle = future.result()
-        print("got response callback")
         if not goal_handle.accepted:
-            self.get_logger().info('Goal rejected :(')
             return
-
-        self.get_logger().info('Goal accepted :)')
 
         self._get_result_future = goal_handle.get_result_async()
         self._get_result_future.add_done_callback(self.get_result_callback)
 
     def feedback_callback(self, feedback_msg):
         feedback = feedback_msg.feedback
-        print("got feed back")
         self.get_logger().info('Received feedback: {0}'.format(feedback.remaining))
 
     def get_result_callback(self, future):
-        print("got result")
         result = future.result().result
         self.get_logger().info('Result: {0}'.format(result.delta))
         self.state=1
-        self.goalSend = False
+        self.delay_while_goal_not_done = False
 
 
     def timer_callback(self):
@@ -111,26 +100,24 @@ class MinimalSubscriber(Node):
         elif self.state == 3:
             # turn
 
-            if self.goalSend == False:
-                self.get_logger().info('goal send is false !!!!!!')
+            if self.delay_while_goal_not_done == False:
                 goal_msg = RotateAbsolute.Goal()
-                goal_msg.theta = random.uniform(-3, 3)
-                print("goal set to massage")
-                print("waiting for server")
+                goal_msg.theta = random.uniform(-5, 5)
                 self._action_client.wait_for_server()
-                print("after server")
                 self._send_goal_future = self._action_client.send_goal_async(goal_msg, feedback_callback=self.feedback_callback)
-                print("after set future")
                 self._send_goal_future.add_done_callback(self.goal_response_callback)
-                print("after set add done callback")
-                self.goalSend = True
+                self.delay_while_goal_not_done = True
 
             else :
-                self.get_logger().info('goal send is true !!!!!!')
-                velocity = Twist()
-                velocity.linear.x = 0.0
-                self.publisher_.publish(velocity)
-                print("turtle is so turning set vel to 0")
+                dumb_msg = Twist()
+                dumb_msg.linear.x = 0.0
+                dumb_msg.linear.y = 0.0
+                dumb_msg.linear.z = 0.0
+
+                dumb_msg.angular.x = 0.0
+                dumb_msg.angular.y = 0.0
+                dumb_msg.angular.z = 0.0
+                self.publisher_.publish(dumb_msg)
 
             # # goal = RotateAbsolute.Goal()
             # # self.get_logger().info('Sending goal to rotate turtle')
