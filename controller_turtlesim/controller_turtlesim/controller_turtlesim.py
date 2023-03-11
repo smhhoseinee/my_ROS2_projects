@@ -29,12 +29,13 @@ class MinimalSubscriber(Node):
         self._action_client = ActionClient(self, RotateAbsolute, 'turtle1/rotate_absolute')
         self.delay_while_goal_not_done = False
         self.state = 1
+        self.get_logger().info('------ Now state is 1 -----')
     
     def listener_callback(self, msg):
         # Change state based on current x and y
-        if (self.state == 1) and (msg.x > 11.0 or msg.y > 11.0 or msg.x <= 0.0 or msg.y <= 0.0):
-            self.get_logger().info('hit state now is 2')
+        if (self.state == 1) and (msg.x > 10.0 or msg.y > 10.0 or msg.x <= 0.0 or msg.y <= 0.0):
             self.state = 2
+            self.get_logger().info('------ Now state is 2 -----')
 
     def goal_response_callback(self, future):
         goal_handle = future.result()
@@ -52,6 +53,7 @@ class MinimalSubscriber(Node):
         result = future.result().result
         self.get_logger().info('Result: {0}'.format(result.delta))
         self.state=1
+        self.get_logger().info('------ Now state is 1 -----')
         self.delay_while_goal_not_done = False
 
 
@@ -61,8 +63,10 @@ class MinimalSubscriber(Node):
         stop = self.get_parameter('stop').get_parameter_value().bool_value
         if stop:
             self.state = 0
+            self.get_logger().info('------ Now state is 0 -----')
         elif self.state == 0:
             self.state = 1
+            self.get_logger().info('------ Now state is 1 -----')
         
         # Set twist message based on state
         if self.state == 0:
@@ -96,6 +100,7 @@ class MinimalSubscriber(Node):
             msg.angular.z = 0.0
 
             self.state = 3
+            self.get_logger().info('------ Now state is 3 -----')
 
         elif self.state == 3:
             # turn
