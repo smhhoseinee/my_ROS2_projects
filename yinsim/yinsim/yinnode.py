@@ -47,9 +47,9 @@ class YinNode(Node):
         try:
             response = future.result()
             self.index += 1
-            msg_to_be_published = String()
-            msg_to_be_published.data = f"yangnode said: {self.msgs[self.index-1]}, {len(self.msgs[self.index-1])}, {response.sum}"
-            self.publisher_.publish(msg_to_be_published)
+            # msg_to_be_published = String()
+            # msg_to_be_published.data = f"yangnode said: {self.msgs[self.index-1]}, {len(self.msgs[self.index-1])}, {response.sum}"
+            # self.publisher_.publish(msg_to_be_published)
             
             if self.index < len(self.msgs) and self.my_turn_to_send:
                 self.send_request(self.msgs[self.index])
