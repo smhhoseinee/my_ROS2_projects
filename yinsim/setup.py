@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'yinnode = yinsim.yinnode:main'
+            'yinnode = yinsim.yinnode:main',
         ],
     },
 )
