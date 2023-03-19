@@ -22,14 +22,14 @@ class YinNode(Node):
             execute_callback=self.execute_callback
         )
         
-        #define the service
-        self.srv = self.create_service(StLen, 'yinnode_service', self.service_callback)       # CHANGE
+        # #define the service
+        # self.srv = self.create_service(StLen, 'yinnode_service', self.service_callback)       # CHANGE
 
-        # define the client
-        self.service_client_ = self.create_client(StLen, 'yangnode_service', )
+        #define the client
+        # self.service_client_ = self.create_client(StLen, 'yangnode_service')
         
-        # define the publisher
-        self.publisher_ = self.create_publisher(String, '/conversation', 10)
+        #define the publisher
+        # self.publisher_ = self.create_publisher(String, '/conversation', 10)
 
         #whether it should send message or wait for Yang
         self.my_turn_to_send = True
@@ -39,8 +39,8 @@ class YinNode(Node):
 
 
         
-        while not self.service_client_.wait_for_service(timeout_sec=1.0):
-            self.get_logger().info('service not available, waiting again...')
+        # while not self.service_client_.wait_for_service(timeout_sec=1.0):
+        #     self.get_logger().info('service not available, waiting again...')
         
         self.req = StLen.Request()
         self.index = 0
@@ -52,7 +52,7 @@ class YinNode(Node):
                         "Noise and sound harmonize each other.",
                         "You shine your light."]
         
-        self.declare_parameter('shout', False)
+        self.declare_parameter('shout', True)
         self.declare_parameter('opacity', 100)
 
 
@@ -61,7 +61,6 @@ class YinNode(Node):
         self.req.b = len(message)
         future = self.service_client_.call_async(self.req)
         self.get_logger().info('request is sent successfully')
-        self.my_turn_to_send = False
         future.add_done_callback(self.callback)
 
     def execute_callback(self, goal_handle):
@@ -93,23 +92,19 @@ class YinNode(Node):
 
     def callback(self, future):
         try:
-            # self.get_logger().info(f'my_turn_to_send0: {self.my_turn_to_send}')
-
+            # response = future.result()
+            self.index += 1
+            # msg_to_be_published = String()
+            # msg_to_be_published.data = f"yangnode said: {self.msgs[self.index-1]}, {len(self.msgs[self.index-1])}, {response.sum}"
+            # self.publisher_.publish(msg_to_be_published)
+            
             if self.index < len(self.msgs) and self.my_turn_to_send:
-                self.index += 1
                 shout = self.get_parameter('shout').get_parameter_value().bool_value
                 message_to_send = self.msgs[self.index]
                 if shout:
                     message_to_send = '**' + message_to_send + '**'
-                
-                # self.get_logger().info(f'my_turn_to_send1: {self.my_turn_to_send}')
-                while not self.my_turn_to_send:
-                    x = 2
-                    self.get_logger().info('wait ...')
-        
-                # self.get_logger().info(f'my_turn_to_send2: {self.my_turn_to_send}')
-                self.send_request(message_to_send)
 
+                self.send_request(message_to_send)
         except Exception as e:
             self.get_logger().info('Service call failed %r' % (e,))
 
@@ -121,15 +116,7 @@ class YinNode(Node):
         #publish on /conversation topic
         msg = String()
         msg.data = 'Yang said: '+ request.a + ', ' + str(request.b) + ', ' + str(response.sum)
-        # self.get_logger().info('response\n my_turn_to_send: %s.%b' % (self.my_turn_to_send))  # log the incoming request
-
         self.publisher_.publish(msg)
-        self.my_turn_to_send = True
-        # self.get_logger().info(f'response\n my_turn_to_send: {self.my_turn_to_send}')
-        # future = self.get_logger().info(f'response\n my_turn_to_send: {self.my_turn_to_send}')
-        # future.add_done_callback(self.callback)
-
-        self.callback(True)
         return response
 
         
@@ -137,8 +124,7 @@ def main(args=None):
     rclpy.init(args=args)
     yinnode = YinNode()
 
-    yinnode.send_request(yinnode.msgs[yinnode.index])
-
+    # yinnode.send_request(yinnode.msgs[yinnode.index])
     rclpy.spin(yinnode)
     yinnode.destroy_node()
     rclpy.shutdown()
