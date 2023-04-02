@@ -7,9 +7,35 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(std_msgs REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
+
+# Build the shared library that contains MyComponent
+add_library(my_component SHARED
+  src/my_component.cpp
+)
+ament_target_dependencies(my_component
+  rclcpp
+  std_msgs
+)
+# Install the shared library and header files
+install(TARGETS
+  my_component
+  DESTINATION lib/${PROJECT_NAME}
+)
+install(
+  DIRECTORY include/
+  DESTINATION include/
+)
+# Export package dependencies
+ament_export_dependencies(
+  rclcpp
+  std_msgs
+)
+
 
 add_executable(my_node src/my_node.cpp)
 target_include_directories(my_node PUBLIC

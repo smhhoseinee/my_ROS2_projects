@@ -3,9 +3,9 @@
 <package format="3">
   <name>my_package</name>
   <version>0.0.0</version>
-  <description>Beginner client libraries tutorials practice package</description>
-  <maintainer email="smhhoseinee@gmail.com">smh</maintainer>
-  <license>Apache License 2.0</license>
+  <description>TODO: Package description</description>
+  <maintainer email="smh@mail.um.ac.ir">root</maintainer>
+  <license>TODO: License declaration</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
