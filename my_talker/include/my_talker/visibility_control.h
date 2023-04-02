@@ -42,3 +42,4 @@ extern "C"
 #endif
 
 #endif  // COMPOSITION__VISIBILITY_CONTROL_H_
+

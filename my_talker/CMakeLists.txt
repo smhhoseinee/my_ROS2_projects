@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(composition)
+project(my_talker)
 
 # Default to C++17
 if(NOT CMAKE_CXX_STANDARD)
@@ -25,13 +25,13 @@ set(node_plugins "")
 add_library(talker_component SHARED
   src/talker_component.cpp)
 target_compile_definitions(talker_component
-  PRIVATE "COMPOSITION_BUILDING_DLL")
+  PRIVATE "MY_TALKER_BUILDING_DLL")
 ament_target_dependencies(talker_component
   "rclcpp"
   "rclcpp_components"
   "std_msgs")
-rclcpp_components_register_nodes(talker_component "composition::Talker")
-set(node_plugins "${node_plugins}composition::Talker;$<TARGET_FILE:talker_component>\n")
+rclcpp_components_register_nodes(talker_component "my_talker::Talker")
+set(node_plugins "${node_plugins}my_talker::Talker;$<TARGET_FILE:talker_component>\n")
 
 # since the package installs libraries without exporting them
 # it needs to make sure that the library path is being exported
@@ -59,3 +59,4 @@ install(TARGETS
   DESTINATION lib/${PROJECT_NAME})
 
 ament_package()
+

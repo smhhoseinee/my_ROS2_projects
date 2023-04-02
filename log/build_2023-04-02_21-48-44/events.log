@@ -1,0 +1,220 @@
+[0.000000] (-) TimerEvent: {}
+[0.000171] (-) JobUnselected: {'identifier': 'action_tutorials_cpp'}
+[0.001471] (-) JobUnselected: {'identifier': 'action_tutorials_interfaces'}
+[0.001543] (-) JobUnselected: {'identifier': 'alicesim'}
+[0.001575] (-) JobUnselected: {'identifier': 'bobsim'}
+[0.001602] (-) JobUnselected: {'identifier': 'composition'}
+[0.001667] (-) JobUnselected: {'identifier': 'controller_turtlesim'}
+[0.001692] (-) JobUnselected: {'identifier': 'cpp_parameters'}
+[0.001747] (-) JobUnselected: {'identifier': 'cpp_pubsub'}
+[0.001800] (-) JobUnselected: {'identifier': 'cpp_srvcli'}
+[0.001861] (-) JobUnselected: {'identifier': 'examples_rclcpp_async_client'}
+[0.001923] (-) JobUnselected: {'identifier': 'examples_rclcpp_cbg_executor'}
+[0.001994] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_action_client'}
+[0.002054] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_action_server'}
+[0.002112] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_client'}
+[0.002159] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_composition'}
+[0.002212] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_publisher'}
+[0.002236] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_service'}
+[0.002257] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_subscriber'}
+[0.002344] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_timer'}
+[0.002505] (-) JobUnselected: {'identifier': 'examples_rclcpp_multithreaded_executor'}
+[0.002572] (-) JobUnselected: {'identifier': 'examples_rclcpp_wait_set'}
+[0.002632] (-) JobUnselected: {'identifier': 'examples_rclpy_executors'}
+[0.002693] (-) JobUnselected: {'identifier': 'examples_rclpy_guard_conditions'}
+[0.002754] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_action_client'}
+[0.002813] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_action_server'}
+[0.002873] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_client'}
+[0.002925] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_publisher'}
+[0.002976] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_service'}
+[0.003035] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_subscriber'}
+[0.003089] (-) JobUnselected: {'identifier': 'examples_rclpy_pointcloud_publisher'}
+[0.003148] (-) JobUnselected: {'identifier': 'intra_process_demo'}
+[0.003209] (-) JobUnselected: {'identifier': 'launch_example_package'}
+[0.003267] (-) JobUnselected: {'identifier': 'launch_example_package2'}
+[0.003323] (-) JobUnselected: {'identifier': 'launch_testing_examples'}
+[0.003373] (-) JobUnselected: {'identifier': 'my_package'}
+[0.003437] (-) JobUnselected: {'identifier': 'my_py_package'}
+[0.003489] (-) JobUnselected: {'identifier': 'py_srvcli'}
+[0.003542] (-) JobUnselected: {'identifier': 'python_parameters'}
+[0.003592] (-) JobUnselected: {'identifier': 'turtlesim'}
+[0.003642] (-) JobUnselected: {'identifier': 'tutorial_interfaces'}
+[0.003696] (-) JobUnselected: {'identifier': 'yangsim'}
+[0.003755] (-) JobUnselected: {'identifier': 'yinsim'}
+[0.003810] (-) JobUnselected: {'identifier': 'yinyang_msgs'}
+[0.003880] (my_talker) JobQueued: {'identifier': 'my_talker', 'dependencies': OrderedDict()}
+[0.003953] (my_talker) JobStarted: {'identifier': 'my_talker'}
+[0.012947] (my_talker) JobProgress: {'identifier': 'my_talker', 'progress': 'cmake'}
+[0.013419] (my_talker) Command: {'cmd': ['/usr/bin/cmake', '/root/ros2_ws/src/my_talker', '-DCMAKE_INSTALL_PREFIX=/root/ros2_ws/src/install/my_talker'], 'cwd': '/root/ros2_ws/src/build/my_talker', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('SSH_CLIENT', '192.168.28.1 13802 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/root'), ('OLDPWD', '/root/ros2_ws'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('_colcon_cd_root', '/opt/ros/humble/'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '31'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/0'), ('DISPLAY', 'localhost:11.0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/ros2_ws/src/build/my_talker'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.28.1 13802 192.168.28.134 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.059888] (my_talker) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.3.0\n'}
+[0.097482] (-) TimerEvent: {}
+[0.102736] (my_talker) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.3.0\n'}
+[0.108517] (my_talker) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.186664] (my_talker) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.194570] (my_talker) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.195026] (my_talker) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.195440] (my_talker) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.197885] (-) TimerEvent: {}
+[0.199797] (my_talker) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.272312] (my_talker) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.277840] (my_talker) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.278140] (my_talker) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.278414] (my_talker) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.280030] (my_talker) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.298244] (-) TimerEvent: {}
+[0.398712] (-) TimerEvent: {}
+[0.453442] (my_talker) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter \n'}
+[0.499073] (-) TimerEvent: {}
+[0.523208] (my_talker) StdoutLine: {'line': b'-- Found rclcpp: 16.0.3 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.578089] (my_talker) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.584486] (my_talker) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.595778] (my_talker) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.599578] (-) TimerEvent: {}
+[0.615457] (my_talker) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.629600] (my_talker) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.680485] (my_talker) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.682466] (my_talker) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.699784] (-) TimerEvent: {}
+[0.757490] (my_talker) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.777367] (my_talker) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.800378] (-) TimerEvent: {}
+[0.813872] (my_talker) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.820262] (my_talker) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.880073] (my_talker) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.882615] (my_talker) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.900918] (-) TimerEvent: {}
+[0.940203] (my_talker) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.941187] (my_talker) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.001622] (-) TimerEvent: {}
+[1.102654] (-) TimerEvent: {}
+[1.141592] (my_talker) StdoutLine: {'line': b'-- Found rclcpp_components: 16.0.3 (/opt/ros/humble/share/rclcpp_components/cmake)\n'}
+[1.202826] (-) TimerEvent: {}
+[1.248837] (my_talker) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.264400] (my_talker) StdoutLine: {'line': b'-- Generating done\n'}
+[1.267186] (my_talker) StdoutLine: {'line': b'-- Build files have been written to: /root/ros2_ws/src/build/my_talker\n'}
+[1.275671] (my_talker) CommandEnded: {'returncode': 0}
+[1.277759] (my_talker) JobProgress: {'identifier': 'my_talker', 'progress': 'build'}
+[1.277822] (my_talker) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/ros2_ws/src/build/my_talker', '--', '-j2', '-l2'], 'cwd': '/root/ros2_ws/src/build/my_talker', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('SSH_CLIENT', '192.168.28.1 13802 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/root'), ('OLDPWD', '/root/ros2_ws'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('_colcon_cd_root', '/opt/ros/humble/'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '31'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/0'), ('DISPLAY', 'localhost:11.0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/ros2_ws/src/build/my_talker'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.28.1 13802 192.168.28.134 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.303025] (-) TimerEvent: {}
+[1.323000] (my_talker) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/talker_component.dir/src/talker_component.cpp.o\x1b[0m\n'}
+[1.403735] (-) TimerEvent: {}
+[1.504793] (-) TimerEvent: {}
+[1.605541] (-) TimerEvent: {}
+[1.706467] (-) TimerEvent: {}
+[1.807625] (-) TimerEvent: {}
+[1.908593] (-) TimerEvent: {}
+[2.009349] (-) TimerEvent: {}
+[2.110267] (-) TimerEvent: {}
+[2.211239] (-) TimerEvent: {}
+[2.312361] (-) TimerEvent: {}
+[2.413586] (-) TimerEvent: {}
+[2.514701] (-) TimerEvent: {}
+[2.615607] (-) TimerEvent: {}
+[2.716612] (-) TimerEvent: {}
+[2.817519] (-) TimerEvent: {}
+[2.918435] (-) TimerEvent: {}
+[3.019113] (-) TimerEvent: {}
+[3.120003] (-) TimerEvent: {}
+[3.221041] (-) TimerEvent: {}
+[3.322004] (-) TimerEvent: {}
+[3.422938] (-) TimerEvent: {}
+[3.523460] (-) TimerEvent: {}
+[3.624318] (-) TimerEvent: {}
+[3.724811] (-) TimerEvent: {}
+[3.825762] (-) TimerEvent: {}
+[3.926422] (-) TimerEvent: {}
+[4.026989] (-) TimerEvent: {}
+[4.127559] (-) TimerEvent: {}
+[4.228506] (-) TimerEvent: {}
+[4.329049] (-) TimerEvent: {}
+[4.429758] (-) TimerEvent: {}
+[4.530504] (-) TimerEvent: {}
+[4.631420] (-) TimerEvent: {}
+[4.732377] (-) TimerEvent: {}
+[4.833399] (-) TimerEvent: {}
+[4.934296] (-) TimerEvent: {}
+[5.035336] (-) TimerEvent: {}
+[5.136215] (-) TimerEvent: {}
+[5.236991] (-) TimerEvent: {}
+[5.337944] (-) TimerEvent: {}
+[5.438680] (-) TimerEvent: {}
+[5.539510] (-) TimerEvent: {}
+[5.640431] (-) TimerEvent: {}
+[5.741307] (-) TimerEvent: {}
+[5.842040] (-) TimerEvent: {}
+[5.943153] (-) TimerEvent: {}
+[6.044018] (-) TimerEvent: {}
+[6.144734] (-) TimerEvent: {}
+[6.245881] (-) TimerEvent: {}
+[6.347160] (-) TimerEvent: {}
+[6.448348] (-) TimerEvent: {}
+[6.549346] (-) TimerEvent: {}
+[6.650073] (-) TimerEvent: {}
+[6.750940] (-) TimerEvent: {}
+[6.851846] (-) TimerEvent: {}
+[6.876186] (my_talker) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX shared library libtalker_component.so\x1b[0m\n'}
+[6.952568] (-) TimerEvent: {}
+[7.053434] (-) TimerEvent: {}
+[7.079848] (my_talker) StdoutLine: {'line': b'[ 50%] Built target talker_component\n'}
+[7.107828] (my_talker) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/main_exec.dir/src/main_exec.cpp.o\x1b[0m\n'}
+[7.154268] (-) TimerEvent: {}
+[7.255028] (-) TimerEvent: {}
+[7.356201] (-) TimerEvent: {}
+[7.457471] (-) TimerEvent: {}
+[7.558426] (-) TimerEvent: {}
+[7.659856] (-) TimerEvent: {}
+[7.761004] (-) TimerEvent: {}
+[7.862081] (-) TimerEvent: {}
+[7.963072] (-) TimerEvent: {}
+[8.064238] (-) TimerEvent: {}
+[8.165668] (-) TimerEvent: {}
+[8.266673] (-) TimerEvent: {}
+[8.367570] (-) TimerEvent: {}
+[8.468767] (-) TimerEvent: {}
+[8.570049] (-) TimerEvent: {}
+[8.671118] (-) TimerEvent: {}
+[8.772135] (-) TimerEvent: {}
+[8.873252] (-) TimerEvent: {}
+[8.974572] (-) TimerEvent: {}
+[9.076175] (-) TimerEvent: {}
+[9.177213] (-) TimerEvent: {}
+[9.278516] (-) TimerEvent: {}
+[9.379558] (-) TimerEvent: {}
+[9.480561] (-) TimerEvent: {}
+[9.581589] (-) TimerEvent: {}
+[9.682881] (-) TimerEvent: {}
+[9.783895] (-) TimerEvent: {}
+[9.884833] (-) TimerEvent: {}
+[9.927586] (my_talker) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable main_exec\x1b[0m\n'}
+[9.985484] (-) TimerEvent: {}
+[10.043340] (my_talker) StdoutLine: {'line': b'[100%] Built target main_exec\n'}
+[10.056374] (my_talker) CommandEnded: {'returncode': 0}
+[10.085780] (-) TimerEvent: {}
+[10.088027] (my_talker) JobProgress: {'identifier': 'my_talker', 'progress': 'install'}
+[10.096211] (my_talker) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/ros2_ws/src/build/my_talker'], 'cwd': '/root/ros2_ws/src/build/my_talker', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('SSH_CLIENT', '192.168.28.1 13802 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/root'), ('OLDPWD', '/root/ros2_ws'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('_colcon_cd_root', '/opt/ros/humble/'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '31'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/0'), ('DISPLAY', 'localhost:11.0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/ros2_ws/src/build/my_talker'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.28.1 13802 192.168.28.134 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[10.103089] (my_talker) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[10.103461] (my_talker) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/install/my_talker/share/my_talker/environment/library_path.sh\n'}
+[10.103719] (my_talker) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/install/my_talker/share/my_talker/environment/library_path.dsv\n'}
+[10.103963] (my_talker) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/install/my_talker/lib/libtalker_component.so\n'}
+[10.105543] (my_talker) StdoutLine: {'line': b'-- Set runtime path of "/root/ros2_ws/src/install/my_talker/lib/libtalker_component.so" to ""\n'}
+[10.105734] (my_talker) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/install/my_talker/lib/my_talker/main_exec\n'}
+[10.106102] (my_talker) StdoutLine: {'line': b'-- Set runtime path of "/root/ros2_ws/src/install/my_talker/lib/my_talker/main_exec" to ""\n'}
+[10.106294] (my_talker) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/install/my_talker/share/ament_index/resource_index/package_run_dependencies/my_talker\n'}
+[10.106522] (my_talker) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/install/my_talker/share/ament_index/resource_index/parent_prefix_path/my_talker\n'}
+[10.106993] (my_talker) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/install/my_talker/share/my_talker/environment/ament_prefix_path.sh\n'}
+[10.107206] (my_talker) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/install/my_talker/share/my_talker/environment/ament_prefix_path.dsv\n'}
+[10.107408] (my_talker) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/install/my_talker/share/my_talker/environment/path.sh\n'}
+[10.107602] (my_talker) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/install/my_talker/share/my_talker/environment/path.dsv\n'}
+[10.107820] (my_talker) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/install/my_talker/share/my_talker/local_setup.bash\n'}
+[10.108032] (my_talker) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/install/my_talker/share/my_talker/local_setup.sh\n'}
+[10.108239] (my_talker) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/install/my_talker/share/my_talker/local_setup.zsh\n'}
+[10.108439] (my_talker) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/install/my_talker/share/my_talker/local_setup.dsv\n'}
+[10.108630] (my_talker) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/install/my_talker/share/my_talker/package.dsv\n'}
+[10.108872] (my_talker) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/install/my_talker/share/ament_index/resource_index/packages/my_talker\n'}
+[10.109087] (my_talker) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/install/my_talker/share/ament_index/resource_index/rclcpp_components/my_talker\n'}
+[10.109308] (my_talker) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/install/my_talker/share/my_talker/cmake/my_talkerConfig.cmake\n'}
+[10.109492] (my_talker) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/install/my_talker/share/my_talker/cmake/my_talkerConfig-version.cmake\n'}
+[10.109682] (my_talker) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/install/my_talker/share/my_talker/package.xml\n'}
+[10.111509] (my_talker) CommandEnded: {'returncode': 0}
+[10.165240] (my_talker) JobEnded: {'identifier': 'my_talker', 'rc': 0}
+[10.166405] (-) EventReactorShutdown: {}

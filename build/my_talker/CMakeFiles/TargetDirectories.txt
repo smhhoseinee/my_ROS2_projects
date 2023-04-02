@@ -1,0 +1,11 @@
+/root/ros2_ws/src/build/my_talker/CMakeFiles/uninstall.dir
+/root/ros2_ws/src/build/my_talker/CMakeFiles/my_talker_uninstall.dir
+/root/ros2_ws/src/build/my_talker/CMakeFiles/talker_component.dir
+/root/ros2_ws/src/build/my_talker/CMakeFiles/main_exec.dir
+/root/ros2_ws/src/build/my_talker/CMakeFiles/test.dir
+/root/ros2_ws/src/build/my_talker/CMakeFiles/edit_cache.dir
+/root/ros2_ws/src/build/my_talker/CMakeFiles/rebuild_cache.dir
+/root/ros2_ws/src/build/my_talker/CMakeFiles/list_install_components.dir
+/root/ros2_ws/src/build/my_talker/CMakeFiles/install.dir
+/root/ros2_ws/src/build/my_talker/CMakeFiles/install/local.dir
+/root/ros2_ws/src/build/my_talker/CMakeFiles/install/strip.dir
