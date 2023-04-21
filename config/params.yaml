@@ -1,0 +1,8 @@
+yinnode:
+  ros__parameters: 
+    shout: True
+    opacity: 90
+
+client_node:
+  ros__parameters: 
+    shout: True

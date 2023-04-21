@@ -1,0 +1,29 @@
+[0.012s] Invoking command in '/root/ros2_ws/src/build/my_talker': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/ros2_ws/src/build/my_talker -- -j2 -l2
+[0.045s] [35m[1mConsolidate compiler generated dependencies of target talker_component[0m
+[0.059s] [ 50%] Built target talker_component
+[0.067s] [35m[1mConsolidate compiler generated dependencies of target main_exec[0m
+[0.081s] [100%] Built target main_exec
+[0.089s] Invoked command in '/root/ros2_ws/src/build/my_talker' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/ros2_ws/src/build/my_talker -- -j2 -l2
+[0.123s] Invoking command in '/root/ros2_ws/src/build/my_talker': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /root/ros2_ws/src/build/my_talker
+[0.130s] -- Install configuration: ""
+[0.130s] -- Up-to-date: /root/ros2_ws/src/install/my_talker/share/my_talker/environment/library_path.sh
+[0.130s] -- Up-to-date: /root/ros2_ws/src/install/my_talker/share/my_talker/environment/library_path.dsv
+[0.130s] -- Up-to-date: /root/ros2_ws/src/install/my_talker/lib/libtalker_component.so
+[0.131s] -- Up-to-date: /root/ros2_ws/src/install/my_talker/lib/my_talker/main_exec
+[0.131s] -- Up-to-date: /root/ros2_ws/src/install/my_talker/share/ament_index/resource_index/package_run_dependencies/my_talker
+[0.131s] -- Up-to-date: /root/ros2_ws/src/install/my_talker/share/ament_index/resource_index/parent_prefix_path/my_talker
+[0.131s] -- Up-to-date: /root/ros2_ws/src/install/my_talker/share/my_talker/environment/ament_prefix_path.sh
+[0.131s] -- Up-to-date: /root/ros2_ws/src/install/my_talker/share/my_talker/environment/ament_prefix_path.dsv
+[0.131s] -- Up-to-date: /root/ros2_ws/src/install/my_talker/share/my_talker/environment/path.sh
+[0.131s] -- Up-to-date: /root/ros2_ws/src/install/my_talker/share/my_talker/environment/path.dsv
+[0.131s] -- Up-to-date: /root/ros2_ws/src/install/my_talker/share/my_talker/local_setup.bash
+[0.131s] -- Up-to-date: /root/ros2_ws/src/install/my_talker/share/my_talker/local_setup.sh
+[0.132s] -- Up-to-date: /root/ros2_ws/src/install/my_talker/share/my_talker/local_setup.zsh
+[0.132s] -- Up-to-date: /root/ros2_ws/src/install/my_talker/share/my_talker/local_setup.dsv
+[0.132s] -- Installing: /root/ros2_ws/src/install/my_talker/share/my_talker/package.dsv
+[0.132s] -- Up-to-date: /root/ros2_ws/src/install/my_talker/share/ament_index/resource_index/packages/my_talker
+[0.132s] -- Up-to-date: /root/ros2_ws/src/install/my_talker/share/ament_index/resource_index/rclcpp_components/my_talker
+[0.132s] -- Up-to-date: /root/ros2_ws/src/install/my_talker/share/my_talker/cmake/my_talkerConfig.cmake
+[0.132s] -- Up-to-date: /root/ros2_ws/src/install/my_talker/share/my_talker/cmake/my_talkerConfig-version.cmake
+[0.132s] -- Up-to-date: /root/ros2_ws/src/install/my_talker/share/my_talker/package.xml
+[0.134s] Invoked command in '/root/ros2_ws/src/build/my_talker' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /root/ros2_ws/src/build/my_talker

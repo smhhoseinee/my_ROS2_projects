@@ -1,0 +1,25 @@
+[35m[1mConsolidate compiler generated dependencies of target talker_component[0m
+[ 50%] Built target talker_component
+[35m[1mConsolidate compiler generated dependencies of target main_exec[0m
+[100%] Built target main_exec
+-- Install configuration: ""
+-- Up-to-date: /root/ros2_ws/src/install/my_talker/share/my_talker/environment/library_path.sh
+-- Up-to-date: /root/ros2_ws/src/install/my_talker/share/my_talker/environment/library_path.dsv
+-- Up-to-date: /root/ros2_ws/src/install/my_talker/lib/libtalker_component.so
+-- Up-to-date: /root/ros2_ws/src/install/my_talker/lib/my_talker/main_exec
+-- Up-to-date: /root/ros2_ws/src/install/my_talker/share/ament_index/resource_index/package_run_dependencies/my_talker
+-- Up-to-date: /root/ros2_ws/src/install/my_talker/share/ament_index/resource_index/parent_prefix_path/my_talker
+-- Up-to-date: /root/ros2_ws/src/install/my_talker/share/my_talker/environment/ament_prefix_path.sh
+-- Up-to-date: /root/ros2_ws/src/install/my_talker/share/my_talker/environment/ament_prefix_path.dsv
+-- Up-to-date: /root/ros2_ws/src/install/my_talker/share/my_talker/environment/path.sh
+-- Up-to-date: /root/ros2_ws/src/install/my_talker/share/my_talker/environment/path.dsv
+-- Up-to-date: /root/ros2_ws/src/install/my_talker/share/my_talker/local_setup.bash
+-- Up-to-date: /root/ros2_ws/src/install/my_talker/share/my_talker/local_setup.sh
+-- Up-to-date: /root/ros2_ws/src/install/my_talker/share/my_talker/local_setup.zsh
+-- Up-to-date: /root/ros2_ws/src/install/my_talker/share/my_talker/local_setup.dsv
+-- Installing: /root/ros2_ws/src/install/my_talker/share/my_talker/package.dsv
+-- Up-to-date: /root/ros2_ws/src/install/my_talker/share/ament_index/resource_index/packages/my_talker
+-- Up-to-date: /root/ros2_ws/src/install/my_talker/share/ament_index/resource_index/rclcpp_components/my_talker
+-- Up-to-date: /root/ros2_ws/src/install/my_talker/share/my_talker/cmake/my_talkerConfig.cmake
+-- Up-to-date: /root/ros2_ws/src/install/my_talker/share/my_talker/cmake/my_talkerConfig-version.cmake
+-- Up-to-date: /root/ros2_ws/src/install/my_talker/share/my_talker/package.xml

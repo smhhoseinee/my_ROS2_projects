@@ -23,8 +23,9 @@ private:
   rclcpp::TimerBase::SharedPtr timer_;
 };
 
-}  // namespace my_talker
+}  
 
-#endif  // COMPOSITION__TALKER_COMPONENT_HPP_
+#endif  
+
 
 
