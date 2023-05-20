@@ -1,0 +1,44 @@
+[1.075s] Invoking command in '/root/ros2_ws/src/gz_ros2_laserscan': PYTHONPATH=/root/ros2_ws/src/build/gz_ros2_laserscan/prefix_override:/root/ros2_ws/src/install/gz_ros2_laserscan/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/gz_ros2_laserscan build --build-base /root/ros2_ws/src/build/gz_ros2_laserscan/build install --record /root/ros2_ws/src/build/gz_ros2_laserscan/install.log --single-version-externally-managed
+[1.401s] running egg_info
+[1.402s] creating ../build/gz_ros2_laserscan/gz_ros2_laserscan.egg-info
+[1.402s] writing ../build/gz_ros2_laserscan/gz_ros2_laserscan.egg-info/PKG-INFO
+[1.403s] writing dependency_links to ../build/gz_ros2_laserscan/gz_ros2_laserscan.egg-info/dependency_links.txt
+[1.403s] writing entry points to ../build/gz_ros2_laserscan/gz_ros2_laserscan.egg-info/entry_points.txt
+[1.403s] writing requirements to ../build/gz_ros2_laserscan/gz_ros2_laserscan.egg-info/requires.txt
+[1.404s] writing top-level names to ../build/gz_ros2_laserscan/gz_ros2_laserscan.egg-info/top_level.txt
+[1.404s] writing manifest file '../build/gz_ros2_laserscan/gz_ros2_laserscan.egg-info/SOURCES.txt'
+[1.406s] reading manifest file '../build/gz_ros2_laserscan/gz_ros2_laserscan.egg-info/SOURCES.txt'
+[1.408s] writing manifest file '../build/gz_ros2_laserscan/gz_ros2_laserscan.egg-info/SOURCES.txt'
+[1.409s] running build
+[1.409s] running build_py
+[1.410s] creating /root/ros2_ws/src/build/gz_ros2_laserscan/build
+[1.410s] creating /root/ros2_ws/src/build/gz_ros2_laserscan/build/lib
+[1.411s] creating /root/ros2_ws/src/build/gz_ros2_laserscan/build/lib/gz_ros2_laserscan
+[1.411s] copying gz_ros2_laserscan/__init__.py -> /root/ros2_ws/src/build/gz_ros2_laserscan/build/lib/gz_ros2_laserscan
+[1.411s] copying gz_ros2_laserscan/gz_ros2_twist.py -> /root/ros2_ws/src/build/gz_ros2_laserscan/build/lib/gz_ros2_laserscan
+[1.411s] copying gz_ros2_laserscan/gz_ros2_laserscan.py -> /root/ros2_ws/src/build/gz_ros2_laserscan/build/lib/gz_ros2_laserscan
+[1.412s] running install
+[1.412s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.413s]   warnings.warn(
+[1.413s] running install_lib
+[1.414s] creating /root/ros2_ws/src/install/gz_ros2_laserscan/lib/python3.10/site-packages/gz_ros2_laserscan
+[1.414s] copying /root/ros2_ws/src/build/gz_ros2_laserscan/build/lib/gz_ros2_laserscan/__init__.py -> /root/ros2_ws/src/install/gz_ros2_laserscan/lib/python3.10/site-packages/gz_ros2_laserscan
+[1.415s] copying /root/ros2_ws/src/build/gz_ros2_laserscan/build/lib/gz_ros2_laserscan/gz_ros2_twist.py -> /root/ros2_ws/src/install/gz_ros2_laserscan/lib/python3.10/site-packages/gz_ros2_laserscan
+[1.415s] copying /root/ros2_ws/src/build/gz_ros2_laserscan/build/lib/gz_ros2_laserscan/gz_ros2_laserscan.py -> /root/ros2_ws/src/install/gz_ros2_laserscan/lib/python3.10/site-packages/gz_ros2_laserscan
+[1.417s] byte-compiling /root/ros2_ws/src/install/gz_ros2_laserscan/lib/python3.10/site-packages/gz_ros2_laserscan/__init__.py to __init__.cpython-310.pyc
+[1.417s] byte-compiling /root/ros2_ws/src/install/gz_ros2_laserscan/lib/python3.10/site-packages/gz_ros2_laserscan/gz_ros2_twist.py to gz_ros2_twist.cpython-310.pyc
+[1.418s] byte-compiling /root/ros2_ws/src/install/gz_ros2_laserscan/lib/python3.10/site-packages/gz_ros2_laserscan/gz_ros2_laserscan.py to gz_ros2_laserscan.cpython-310.pyc
+[1.418s] running install_data
+[1.419s] creating /root/ros2_ws/src/install/gz_ros2_laserscan/share/ament_index
+[1.419s] creating /root/ros2_ws/src/install/gz_ros2_laserscan/share/ament_index/resource_index
+[1.419s] creating /root/ros2_ws/src/install/gz_ros2_laserscan/share/ament_index/resource_index/packages
+[1.420s] copying resource/gz_ros2_laserscan -> /root/ros2_ws/src/install/gz_ros2_laserscan/share/ament_index/resource_index/packages
+[1.420s] copying package.xml -> /root/ros2_ws/src/install/gz_ros2_laserscan/share/gz_ros2_laserscan
+[1.420s] creating /root/ros2_ws/src/install/gz_ros2_laserscan/share/gz_ros2_laserscan/launch
+[1.420s] copying launch/ros_gz_bridge.launch.py -> /root/ros2_ws/src/install/gz_ros2_laserscan/share/gz_ros2_laserscan/launch
+[1.421s] running install_egg_info
+[1.422s] Copying ../build/gz_ros2_laserscan/gz_ros2_laserscan.egg-info to /root/ros2_ws/src/install/gz_ros2_laserscan/lib/python3.10/site-packages/gz_ros2_laserscan-0.0.0-py3.10.egg-info
+[1.424s] running install_scripts
+[1.450s] Installing gz_ros2_laserscan script to /root/ros2_ws/src/install/gz_ros2_laserscan/lib/gz_ros2_laserscan
+[1.451s] writing list of installed files to '/root/ros2_ws/src/build/gz_ros2_laserscan/install.log'
+[1.479s] Invoked command in '/root/ros2_ws/src/gz_ros2_laserscan' returned '0': PYTHONPATH=/root/ros2_ws/src/build/gz_ros2_laserscan/prefix_override:/root/ros2_ws/src/install/gz_ros2_laserscan/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/gz_ros2_laserscan build --build-base /root/ros2_ws/src/build/gz_ros2_laserscan/build install --record /root/ros2_ws/src/build/gz_ros2_laserscan/install.log --single-version-externally-managed
